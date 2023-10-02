@@ -1,0 +1,43 @@
+#home {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8af1ff), color-stop(#3087af), to(#2225c0));
+  background: linear-gradient(#8af1ff, #3087af, #2225c0);
+  height: 88vh;
+  padding: 20px;
+  padding-top: 10vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#home .home-left h1 {
+  font-size: 50px;
+}
+
+#home .home-left h1 span {
+  color: aqua;
+}
+
+#home .home-left h2 {
+  color: #242424;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+#home .home-right {
+  height: 90%;
+}
+
+#contact {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2225c0), color-stop(#41118f), to(#24064b));
+  background: linear-gradient(#2225c0, #41118f, #24064b);
+  height: 100vh;
+  width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */
