@@ -1,16 +1,16 @@
 import React, {Suspense} from 'react'
 import {motion} from 'framer-motion'
-import Arduino from './Arduino'
-import './styles/style.css'
+// import Arduino from '../canvas/Arduino'
+import '../styles/style.css'
 
 const Home = () => {
     return (
-        <div id='home'
+        <section id='home'
         >
             <motion.div initial={{opacity: 0, x: "-50vw"}}
             animate={{opacity: 1, x: 0, transition: {delay: 1.4, duration: 0.5}}} className='home-left'>
                 <h1>
-                    Hi! I'm <span>%name here%</span>
+                    Hi! I'm <span>Fredrick Minta Newton</span>
                 </h1>
                 <h2>
                     Lorem ipsum dolor sit amet consectetur
@@ -22,9 +22,9 @@ const Home = () => {
                 </h2>
             </motion.div>
             <div className='home-right'>
-                <Arduino/>
+                {/* <Arduino/> */}
             </div>
-        </div>
+        </section>
     )
 }
 

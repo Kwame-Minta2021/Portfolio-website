@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home';
-import Contact from './components/Contact';
+import { Navbar, Home, Projects, Experience, Achievements,
+  Leadership,Contact } from './components/sections';
 
 function App() {
   
@@ -10,6 +9,10 @@ function App() {
     <div>
       <Navbar/>
       <Home/>
+      <Projects/>
+      <Experience/>
+      <Achievements/>
+      <Leadership/>
       <Contact/>
     </div>
   );

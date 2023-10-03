@@ -1,7 +1,50 @@
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
+nav .page-links {
+  font-size: 18px;
+}
+
+nav .page-links a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  margin: 0 8px;
+}
+
+nav .page-links a:hover {
+  text-shadow: 0 0 5px grey, 0 0 8px black;
+}
+
+nav .logo img {
+  height: 50px;
+}
+
+nav .social-links a {
+  padding: 0 5px;
+}
+
+nav .social-links a img {
+  height: 40px;
+  width: 40px;
+}
+
 #home {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8af1ff), color-stop(#3087af), to(#2225c0));
-  background: linear-gradient(#8af1ff, #3087af, #2225c0);
-  height: 88vh;
+  height: 100vh;
   padding: 20px;
   padding-top: 10vh;
   display: -ms-grid;
@@ -34,10 +77,86 @@
   height: 90%;
 }
 
-#contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2225c0), color-stop(#41118f), to(#24064b));
-  background: linear-gradient(#2225c0, #41118f, #24064b);
+#projects {
   height: 100vh;
-  width: 100vw;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects h1 {
+  text-align: center;
+  padding: 10px;
+  margin: 10px 20%;
+  border-bottom: 2px solid black;
+}
+
+#projects .project-collection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin: 10px 20px;
+  height: 100%;
+  border: 2px solid black;
+}
+
+#projects .project-collection .project_card {
+  border: 2px solid brown;
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+}
+
+#projects .project-collection .project_card h4 {
+  position: absolute;
+  text-align: center;
+}
+
+#projects .project-collection .project_card img {
+  width: 100px;
+  height: 100px;
+}
+
+#achievements {
+  height: 100vh;
+}
+
+#leadership .horizontal-timeline {
+  margin: 0 1vw;
+  background-color: black;
+  width: 95vw;
+  height: 5px;
+}
+
+#leadership .upper, #leadership .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 2px red dotted;
+}
+
+#leadership .contain {
+  border: 2px orangered solid;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+#leadership .lower .contain {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,5 @@
-*{
-  margin: 0;
-  padding: 0
+* {
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -9,6 +8,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(rgb(138, 241, 255), rgb(48, 135, 175), rgb(34, 37, 192),
+  rgb(129, 28, 160), rgb(168, 21, 161), rgb(172, 24, 115), rgb(167, 12, 89),
+  rgb(167, 12, 38), rgb(155, 6, 6), rgb(95, 2, 2), rgb(22, 0, 0), black); */
+  /* background: linear-gradient(white, blue, violet, red, black) */
 }
 
 code {
@@ -21,4 +24,8 @@ code {
   color: black;
   padding: 5px 5px;
   margin: 0 5px;
+}
+
+.hidden{
+  display: none;
 }

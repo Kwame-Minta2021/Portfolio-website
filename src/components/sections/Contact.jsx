@@ -1,5 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import '../styles/style.css'
 
 const pageVariant = {
     visible: {
@@ -21,10 +22,10 @@ const pageVariant = {
 
 const Contact = () => {
     return (
-        <motion.div id='contact'
+        <motion.section id='contact'
         >
             Contact
-        </motion.div>
+        </motion.section>
     )
 }
 

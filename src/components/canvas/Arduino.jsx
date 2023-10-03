@@ -17,7 +17,7 @@ const Arduino = () => {
                     <primitive object={arduino.scene}
                     scale={1}
                     position={[0, -1, 2]}
-                    rotation={[0.1, 0.1, -0.3]}/>
+                    rotation={[1.4, 0.1, -0.3]}/>
                     <OrbitControls
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2}

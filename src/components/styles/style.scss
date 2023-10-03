@@ -1,7 +1,42 @@
+nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    .page-links{
+        font-size: 18px;
+        a{
+            text-decoration: none;
+            color: black;
+            transition: .3s ease-in;
+            margin: 0 8px;
+            &:hover{
+                text-shadow: 0 0 5px grey, 0 0 8px black;
+            }
+        }
+    }
+    .logo{
+        img{
+            height: 50px;
+        }
+    }
+    .social-links{
+        a{
+            padding: 0 5px;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}
+
 #home{
-    background: linear-gradient(rgb(138, 241, 255), rgb(48, 135, 175), rgb(34, 37, 192));
-    height: 88vh;
-    // width: 100vw;
+    height: 100vh;
     padding: 20px;
     padding-top: 10vh;
     display: grid;
@@ -26,9 +61,66 @@
     }
 }
 
-
-#contact{
-    background: linear-gradient(rgb(34, 37, 192), rgb(65, 17, 143), rgb(36, 6, 75));
+#projects{
     height: 100vh;
-    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        padding: 10px;
+        margin: 10px 20%;
+        border-bottom: 2px solid black;
+    }
+    .project-collection{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px 20px;
+        height: 100%;
+        border: 2px solid black;
+        .project_card{
+            border: 2px solid brown;
+            position: relative;
+            margin: 5px;
+            overflow: hidden;
+            h4{
+                position: absolute;
+                text-align: center;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+
+#achievements{
+    height: 100vh;
+}
+
+#leadership{
+    .horizontal-timeline{
+        margin: 0 1vw;
+        background-color: black;
+        width: 95vw;
+        height: 5px;
+    }
+    .upper, .lower{
+        display: flex;
+        justify-content: space-around;
+        border: 2px red dotted;
+    }
+    .contain{
+        border: 2px orangered solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: end;
+    }
+    .lower{
+        .contain{
+            align-items: start;
+        }
+    }
 }
