@@ -1,16 +1,16 @@
 import React from 'react'
-import '../styles/style.css'
 import Card from '../parts/Card'
 import { projects } from '../../constants'
-import {motion, useScroll} from 'framer-motion'
+import {motion} from 'framer-motion'
+import {fadeIn} from '../../utils/motion'
 
 const CardCollection = () => {
     return(
         <div className='project-collection'>
             {
-                projects.map((project, key) => (
-                    <Card name={project.name}
-                    image={project.image}/>
+                projects.map((project, index) => (
+                    <Card name={project.name} key={index}
+                    index={index} image={project.image}/>
                 ))
             }
         </div>
@@ -19,12 +19,14 @@ const CardCollection = () => {
 
 const Projects = () => {
 
-    const scrollAnimation = useScroll()
     return (
-        <section id='projects'>
-            <h1>My Projects</h1>
+        <motion.section id='projects' className='project_card'
+        variants={fadeIn('right', 0.1, 0.4)} initial='hidden'
+        whileInView='visible'
+        viewport={{once: true}}>
+            <h1 className='section-title'>My Projects</h1>
             <CardCollection/>
-        </section>
+        </motion.section>
     )
 }
 

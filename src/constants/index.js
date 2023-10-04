@@ -24,12 +24,12 @@ const projects = [
         name: `Smart Navigation Stick to empower the
         visually impaired`,
         image: smart_stick
-    },
-    {
-        name: `IoT-Based myltiputpose emergency detection
-        system for fire outbreak and gas leakage`,
-        image: gas_detector
     }
+    // {
+    //     name: `IoT-Based myltiputpose emergency detection
+    //     system for fire outbreak and gas leakage`,
+    //     image: gas_detector
+    // }
 ]
 
 const experience = [

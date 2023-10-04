@@ -14,6 +14,7 @@ const Leadership = () => {
                 <h4>{role.group}</h4>
                 <h4>{role.duration}</h4>
               </div>
+              <div className='triangle-down'></div>
             </div>
           ))
         }
@@ -28,6 +29,7 @@ const Leadership = () => {
                 <h4>{role.group}</h4>
                 <h4>{role.duration}</h4>
               </div>
+              <div className='triangle-up'></div>
             </div>
           ))
         }
