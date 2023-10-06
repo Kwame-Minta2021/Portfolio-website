@@ -1,4 +1,3 @@
-import '../styles/experience.css'
 import { leadership_role } from '../../constants'
 import React, { useState } from "react";
 

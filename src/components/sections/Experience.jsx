@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/experience.css'
 import { experience } from '../../constants'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../../utils/motion'
@@ -7,7 +6,7 @@ import {fadeIn} from '../../utils/motion'
 const Experience = () => {
   return (
     <section id='experience'>
-      <h1>Experience</h1>
+      <h1 className='section-title'>Experience</h1>
       
       <div className='timeline'>
         {

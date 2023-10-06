@@ -1,5 +1,8 @@
 import { python, cpp, java, e_commerce, robot_1, valve,
-    gas_detector, rfid, robotics_1, smart_stick} from '../assets'
+    gas_detector, rfid, robotics_1, smart_stick, arduino,
+    jetson, raspberry_pi, proteus, fritzing, wireshark,
+    ensp_simulator, latex, visual_studio,
+    pycharm, matlab} from '../assets'
 
 const projects = [
     {
@@ -66,33 +69,88 @@ const skills = {
         }
     ],
     engineering_tools_and_software : [
-        'MATLAB', 'Arduino', 'Jetson Nano', 'Raspberry Pi',
-        'Proteus', 'Fritzing', 'Wireshark', 'ENSP Simulator',
-        'LaTeX','Visual Studio', 'PyCharm',
+        {
+            name: 'MATLAB',
+            image: matlab
+        },
+        {
+            name: 'Arduino',
+            image: arduino
+        },
+        {
+            name: 'Jetson Nano',
+            image: jetson
+        },
+        {
+            name: 'Raspberry Pi',
+            image: raspberry_pi
+        },
+        {
+            name: 'Proteus',
+            image: proteus
+        },
+        {
+            name: 'Fritzing',
+            image: fritzing
+        },
+        {
+            name: 'Wireshark',
+            image: wireshark
+        },
+        {
+            name: 'ENSP Simulator',
+            image: ensp_simulator
+        },
+        {
+            name: 'LaTeX',
+            image: latex
+        },
+        {
+            name: 'Visual Studio',
+            image: visual_studio
+        },
+        {
+            name: 'PyCharm',
+            image: pycharm
+        }
     ]
 }
 
 const honors_and_awards = [
     {
-        award: 'First runner-up Disability Inclusive Hackathon',
-        date: 'Dec, 2021'
-    },
-    {
-        award: `Participated at the Tech in Ghana Conference
-        by representing UMaT`,
-        date: 'May, 2022'
-    },
-    {
-        award: 'Winner for UMaT innovation and career Fair Hackathon',
+        position: '1',
+        suffix: 'st',
+        kind: 'Winner',
+        venue: 'UMaT Innovation and Career Fair Hackathon',
         date: 'July, 2022'
     },
     {
-        award: 'Winner for Delta Innovation Camp',
+        position: '1',
+        suffix: 'st',
+        kind: 'Winner',
+        venue: 'Delta Innovation Camp',
         date: 'May, 2023'
     },
     {
-        award: 'Winner for UMaT innovation and career Fair Hackathon',
+        position: '1',
+        suffix: 'st',
+        kind: 'Winner',
+        venue: 'UMaT Innovation and Career Fair Hackathon',
         date: 'July, 2023'
+    },
+    {
+        position: '1',
+        suffix: 'st',
+        kind: 'Runner-up',
+        venue: 'Disability Inclusive Hackathon',
+        date: 'Dec, 2021'
+    },
+    {
+        position: 'Participation',
+        suffix: '',
+        kind: 'Represented UMaT',
+        venue: `Tech in Ghana Conference`,
+        date: 'May, 2022'
     }
 ]
 
