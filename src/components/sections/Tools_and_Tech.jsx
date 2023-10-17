@@ -6,7 +6,11 @@ const languages = skills.programming_languages
 const tools = skills.engineering_tools_and_software
 
 const Tools_and_Tech = () => {
-    const [isHovered, setisHovered] = useState(false)
+    const [isHovered, setisHovered] = useState(-1)
+
+    const handleHovered = (value) => {
+        setisHovered(value);
+    }
 
   return (
     <section id='tools_and_tech'>
@@ -16,20 +20,23 @@ const Tools_and_Tech = () => {
             <div className='language-display'>
                 {
                     languages.map((language, index) => (
-                        <div key={index}>
+                        <div className='center' key={index}>
                             <motion.div
-                            onHoverStart={() => setisHovered}
-                            whileHover={{y: [0, -10, 0], transition:{duration: 1, repeat:Infinity}}}
+                            onMouseEnter={() => handleHovered(index)}
+                            onMouseLeave={() => handleHovered(-1)}
+                            whileHover={{y: [0, -10, 0], transition:{ease:"easeOut",duration: 1, repeat:Infinity}}}
                             className='language-ball' key={index}
                             id={`lang-${index}`}>
                                 <img src={language.image} alt={language.name}
                                 title={language.name}/>
                             </motion.div>
-                            {isHovered && <motion.div
+                            {/* play shadow motion */}
+                            {isHovered === index && <motion.div
                             animate={{scale: [1, 0.3, 1], transition:{duration: 1, repeat:Infinity}}}
                             className='ball-shadow'>
                             </motion.div>}
-                            {isHovered || <div className='ball-shadow'></div>}
+                            {/* stop shadow motion */}
+                            {isHovered === index || <div className="ball-shadow"></div>}
                         </div>
                     ))
                 }

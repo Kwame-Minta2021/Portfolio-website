@@ -1,9 +1,33 @@
-import React, {Suspense} from 'react'
+import React, {useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
-// import Arduino from '../canvas/Arduino'
+import Lottie from 'react-lottie';
 import '../styles/style.css'
+import animationData from './lotty/animation_lnuf1fjg';
+
+const defaultOptions = {
+    loop: 10000,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice"
+    }
+};
 
 const Home = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 675px)");
+        setIsMobile(mediaQuery.matches);
+        const handleMediaQueryChange = (event) => {
+        setIsMobile(event.matches);
+    };
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+        mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+    }, []);
+
     return (
         <section id='home'
         >
@@ -22,7 +46,9 @@ const Home = () => {
                 </h2>
             </motion.div>
             <div className='home-right'>
-                {/* <Arduino/> */}
+                <Lottie options={defaultOptions}
+                height={!isMobile?400:200} width={!isMobile?400:270}
+                />
             </div>
         </section>
     )

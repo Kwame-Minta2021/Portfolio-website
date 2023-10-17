@@ -3,6 +3,7 @@ import './App.css';
 import { Navbar, Home, Projects, Experience, Achievements,
   Leadership,Contact } from './components/sections';
 import Tools_and_Tech from './components/sections/Tools_and_Tech';
+import Footer from './components/parts/Footer';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <Achievements/>
       <Leadership/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }

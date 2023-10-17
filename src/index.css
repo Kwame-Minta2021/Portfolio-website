@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -8,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(rgb(56, 108, 250),rgb(15, 47, 228),rgb(11, 15, 206));
+  background: linear-gradient(rgb(72, 118, 204),rgb(53, 134, 201));
 }
 
 code {

@@ -31,8 +31,50 @@ const smart_stick = 'my_images/projects/smart-stick.jpg'
 const valve = 'my_images/projects/valve.jpg'
 
 
+// contact me
+const contact_me = [
+    {
+        icon: 'my_images/social_icons/phone.png',
+        detail: "+233 543 845 970",
+        description: "Phone"
+    },
+    {
+        icon: 'my_images/social_icons/gmail.png',
+        detail: "fredrickminta@gmail.com",
+        description: "Email"
+    },
+    {
+        icon: 'my_images/social_icons/website.png',
+        detail: "/",
+        description: "Website"
+    },
+]
+
+
+// social media
+const social_media = [
+    {
+        icon: 'my_images/social_icons/facebook.png',
+        link: '/'
+    },
+    {
+        icon: 'my_images/social_icons/twitter.png',
+        link: '/'
+    },
+    {
+        icon: 'my_images/social_icons/linkedin.png',
+        link: 'https://www.linkedin.com/in/minta-fredrick-kwame-51900b1b7'
+    },
+    // {
+    //     icon: 'my_images/social_icons/whatsapp.png',
+    //     link: '/'
+    // },
+]
+
+const logo = 'my_images/logo1.png'
 
 export { delta, umat, arduino, cpp, ensp_simulator, fritzing,
-java, jetson, latex, proteus, pycharm, python, raspberry_pi, visual_studio,
-wireshark, e_commerce, gas_detector, rfid, robot_1, robotics_1, smart_stick,
-valve, matlab, wreath}
+java, jetson, latex, proteus, pycharm, python, raspberry_pi,
+visual_studio, wireshark, e_commerce, gas_detector, rfid,
+robot_1, robotics_1, smart_stick, valve, matlab, wreath,
+contact_me, social_media, logo}
