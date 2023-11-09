@@ -75,24 +75,23 @@ nav{
     min-height: 100vh;
     padding: 20px;
     padding-top: 5vh;
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     border-radius: 20px;
-    @media (max-width: 675px){
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr 1fr;
-        flex-direction: column;
-    }
     .home-left{
         max-width: 50%;
         padding-right: 20px;
+        @media (max-width: 675px){
+            max-width: 80%;
+        }
         h1{
         font-size: 50px;
+            @media (max-width: 675px){
+                font-size: 40px;
+            }
             span{
                 color: white;
             }
@@ -100,13 +99,19 @@ nav{
         h2{
             color: rgb(36, 36, 36);
             font-size: 20px;
-            font-weight: lighter;
+            font-weight: lighter;  
         }
     }
     .home-right{
         height: 90%;
         max-width: 50%;
         overflow: hidden;
+    }
+    @media (max-width: 675px){
+        flex-direction: column;
+        padding: 0;
+        justify-content: space-between;
+        min-height: auto;
     }
 }
 
@@ -688,6 +693,7 @@ nav{
                 }
                 @media (max-width: 675px){
                     justify-content: space-around;
+                    margin-right: 5px;
                     img{
                         width: 20px;
                         height: 20px;
