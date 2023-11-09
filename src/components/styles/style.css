@@ -75,17 +75,22 @@ nav .social-links a img {
   margin-bottom: 50px;
   border-radius: 20px;
 }
-@media (max-width: 675px) {
-  #home {
-    flex-direction: column;
-  }
-}
 #home .home-left {
   max-width: 50%;
   padding-right: 20px;
 }
+@media (max-width: 675px) {
+  #home .home-left {
+    max-width: 80%;
+  }
+}
 #home .home-left h1 {
   font-size: 50px;
+}
+@media (max-width: 675px) {
+  #home .home-left h1 {
+    font-size: 40px;
+  }
 }
 #home .home-left h1 span {
   color: white;
@@ -99,6 +104,14 @@ nav .social-links a img {
   height: 90%;
   max-width: 50%;
   overflow: hidden;
+}
+@media (max-width: 675px) {
+  #home {
+    flex-direction: column;
+    padding: 0;
+    justify-content: space-between;
+    min-height: auto;
+  }
 }
 
 #projects {
@@ -692,6 +705,7 @@ nav .social-links a img {
 @media (max-width: 675px) {
   #contact .container .left .icons {
     justify-content: space-around;
+    margin-right: 5px;
   }
   #contact .container .left .icons img {
     width: 20px;
