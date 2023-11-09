@@ -45,7 +45,7 @@ const contact_me = [
     },
     {
         icon: 'my_images/social_icons/website.png',
-        detail: "/",
+        detail: "/portfolio-website-gray-chi-69.vercel.app",
         description: "Website"
     },
 ]
