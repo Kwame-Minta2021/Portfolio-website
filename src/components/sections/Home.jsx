@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import  {useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
 import Lottie from 'react-lottie';
 import '../styles/style.css'
@@ -35,7 +35,7 @@ const Home = () => {
             animate={{opacity: 1, x: 0, transition: {delay: 1.4, duration: 0.8, ease: "easeOut"}}}
 			className='home-left'>
                 <h1>
-                    Hi! I'm <span>Fredrick Minta Newton</span>
+                    Hi! I'm <span>Frederick Kwame Minta &#60;/Newton&#62;</span>
                 </h1>
                 <h2>
                     This portfolio showcases a range of projects
@@ -45,7 +45,7 @@ const Home = () => {
 					firmware to turn concepts into functional hardware 
 					solutions. This portfolio serves as a testament to 
 					my abilities and innovative approach to computer
-					engineering.
+					engineering and Software engineering.
                 </h2>
             </motion.div>
             <motion.div className='home-right' initial={{opacity: 0, x: "50vw"}}

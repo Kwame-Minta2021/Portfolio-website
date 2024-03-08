@@ -1,4 +1,3 @@
-import React from 'react'
 import Card from '../parts/Card'
 import { projects } from '../../constants'
 import {motion} from 'framer-motion'
