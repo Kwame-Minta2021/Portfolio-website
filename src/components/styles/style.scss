@@ -84,12 +84,12 @@ nav{
     .home-left{
         max-width: 50%;
         padding-right: 20px;
-        @media (max-width: 675px){
-            max-width: 80%;
+        @media (max-width: 780px){
+            max-width: 90%;
         }
         h1{
         font-size: 50px;
-            @media (max-width: 675px){
+            @media (max-width: 780px){
                 font-size: 40px;
             }
             span{
@@ -107,7 +107,7 @@ nav{
         max-width: 50%;
         overflow: hidden;
     }
-    @media (max-width: 675px){
+    @media (max-width: 780px){
         flex-direction: column;
         padding: 0;
         justify-content: space-between;
@@ -256,10 +256,10 @@ nav{
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -268,18 +268,18 @@ nav{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+/* Container around content */
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
+}
+
   /* The circles on the timeline */
-  .container::after {
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -488,7 +488,7 @@ nav{
         grid-template-rows: repeat(6, 1fr);
         gap: 25px;
         @media (max-width: 675px){
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }
         .award-cell{
@@ -503,6 +503,7 @@ nav{
             align-items: center;
             text-align: center;
             justify-content: center;
+            cursor: default;
             h1{
                 padding: 0; margin: 0;
                 span{
@@ -518,35 +519,6 @@ nav{
                 }
             }
         }
-        // .award-3{
-        //     grid-column: 2/span 3;
-        // }
-        // .award-4{
-        //     grid-column: 6/span 3;
-        // }
-        // @media (max-width: 675px){
-        //     .award-0{
-        //         grid-column: 1/2;
-        //         grid-row: 1/2;
-        //     }
-        //     .award-1{
-        //         grid-column: 1/3;
-        //         grid-row: 3/4;
-        //     }
-        //     .award-2{
-        //         grid-column: 1/2;
-        //         grid-row: 2/3;
-        //     }
-        //     .award-3{
-        //         grid-column: 2/3;
-        //         grid-row: 2/3;
-        //     }
-        //     .award-4{
-        //         grid-column: 2/3;
-        //         grid-row: 1/2;
-        //         padding: 0;
-        //     }
-        // }
     }
 }
 

@@ -79,15 +79,15 @@ nav .social-links a img {
   max-width: 50%;
   padding-right: 20px;
 }
-@media (max-width: 675px) {
+@media (max-width: 780px) {
   #home .home-left {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 #home .home-left h1 {
   font-size: 50px;
 }
-@media (max-width: 675px) {
+@media (max-width: 780px) {
   #home .home-left h1 {
     font-size: 40px;
   }
@@ -105,7 +105,7 @@ nav .social-links a img {
   max-width: 50%;
   overflow: hidden;
 }
-@media (max-width: 675px) {
+@media (max-width: 780px) {
   #home {
     flex-direction: column;
     padding: 0;
@@ -486,7 +486,7 @@ nav .social-links a img {
 }
 @media (max-width: 675px) {
   #achievements .achieve-display {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
@@ -502,6 +502,7 @@ nav .social-links a img {
   align-items: center;
   text-align: center;
   justify-content: center;
+  cursor: default;
 }
 #achievements .achieve-display .award-cell h1 {
   padding: 0;
