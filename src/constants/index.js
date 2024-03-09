@@ -124,14 +124,6 @@ const skills = {
 
 const honors_and_awards = [
     {
-        position: '3',
-        suffix:'rd',
-        kind: 'winner',
-        venue: 'Kosmos Innovation Centre  Ignitia Climate Hackathon',
-        date: 'Dec, 2023'
-
-    },
-    {
         position: '1',
         suffix: 'st',
         kind: 'Winner',
@@ -165,6 +157,13 @@ const honors_and_awards = [
         kind: 'Represented UMaT',
         venue: `Tech in Ghana Conference`,
         date: 'May, 2022'
+    },
+    {
+        position: '3',
+        suffix:'rd',
+        kind: 'winner',
+        venue: 'Kosmos Innovation Centre  Ignitia Climate Hackathon',
+        date: 'Dec, 2023'
     }
 ]
 
